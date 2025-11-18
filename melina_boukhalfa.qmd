@@ -138,3 +138,76 @@ x[c(-1,-4)] #can't mix positive and negative values, use negative to remove an i
 ```
 
 We can index by integer, in R everything is a vector
+
+
+# Lists 
+
+Vectors must be type uniform, which will trigger a conversion to character in many cases
+```{r}
+broken<-c(1L, 1.5, "toto", FALSE)
+broken
+typeof(broken)
+```
+
+Lists do not have limitation
+
+## Creating a list 
+
+```{r}
+bar<-list(1L, 1.5, "toto", FALSE)
+bar
+```
+
+A list can be understood as a vector of vectors
+```{r}
+foo<-list(c(1,2,3), TRUE, length)
+foo
+length(foo)
+```
+
+## Indexing
+
+```{r}
+foo
+foo[1]
+cat("#")
+foo[-2]
+cat("#")
+foo[c(3,2,2,1)]
+```
+
+```{r}
+foo[0]
+foo[4]
+```
+
+
+```{r}
+x<-list(c(1,2,3), c(TRUE,FALSE, LETTERS[10:15]))
+x
+```
+
+```{r}
+x[c(1,4,5)]
+```
+```{r}
+x[5]<-list(c(-2,1))
+x
+```
+
+
+```{r}
+NA #missing value
+NULL #missing object
+NaN #not a number
+```
+
+```{r}
+0/0
+1/0
+-1/0
+1/0 - 1/0
+1/0 +1
+1/Inf
+```
+
