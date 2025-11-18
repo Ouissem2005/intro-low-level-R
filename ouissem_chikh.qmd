@@ -5,3 +5,32 @@ format: html
 editor: visual
 ---
 
+## types and classes
+
+###types
+
+```{r}
+typeof(1.5)
+typeof("toto")
+typeof(TRUE)
+typeof(1L)
+typeof(1)
+typeof(typeof)
+typeof(list())
+```
+###classes
+
+
+```{r}
+data(iris)
+typeof(iris)
+class(iris)
+```
+
+
+
+
+
+
+
+
