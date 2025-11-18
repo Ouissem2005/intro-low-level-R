@@ -71,7 +71,8 @@ str_length(z)
 ```
 
 
-
+ git config pull.rebase false  # merge
+ 
 
 
 
