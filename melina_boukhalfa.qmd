@@ -4,3 +4,32 @@ author: "Mélina Boukhalfa"
 format: html
 ---
 
+# Types and classes 
+## Types
+```{r}
+typeof(1.5)
+typeof("toto")
+typeof('toto')
+typeof(TRUE)
+typeof(1L)
+typeof(1)
+typeof(typeof)
+typeof(list())
+```
+You can't expand types, but you can create your own types (not in the same space, they don't have the hardware version). The developer creates classes, types are given by the environment. 
+
+## Classes
+```{r}
+data(iris)
+iris|>class()
+iris|>typeof()
+```
+# Vectors
+
+Many things in R are vectors (and most of other things are lists). A vector is a collection of values of the same type (possibly a single value)
+```{r}
+x<- 15.25
+length(x) #all vectors have a length
+x[1] #access to an element
+```
+
