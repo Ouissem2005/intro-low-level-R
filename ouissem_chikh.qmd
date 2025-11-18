@@ -18,6 +18,7 @@ typeof(1)
 typeof(typeof)
 typeof(list())
 ```
+
 ###classes
 
 
@@ -73,10 +74,6 @@ str_length(z)
 
  git config pull.rebase false  # merge
  
-
-
-
-
 
 
 
