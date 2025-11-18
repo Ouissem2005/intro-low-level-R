@@ -28,6 +28,84 @@ typeof(iris)
 class(iris)
 ```
 
+##vectors
+
+many things in R are vectores (and most of the other thing are listed)
+a vector=collection of values of the same type (possibily a single value)
+
+```{r}
+x<-15.25
+length(x) ##all vectors have a length
+x(1)
+```
+
+```{r}
+y<-c(1,-2,45,1.5,-1e-10)
+y
+typeof(y)
+y[2]
+length(y)
+```
+```{r}
+c(x,y) #concatenation of vectors
+```
+
+
+###character vectors
+
+this is not R strenght 
+
+```{r}
+z<-"Alice"
+length(z)
+```
+
+salvation comes from the 'stringer' package
+
+
+```{r}
+library(stringr)
+```
+
+```{r}
+str_length(z)
+```
+
+
+ git config pull.rebase false  # merge
+ 
+assignement can be understood has a value semantic assignement: 'x' and 'y' are different vectors with the same initial content. 
+
+
+```{r}
+
+```
+ 
+ therefore modifying 'x' has no eggect on 'y'
+ 
+```{r}
+x[1]<-18
+x
+y
+```
+ 
+
+
+advanced
+
+indexing is made with vectors of any length
+
+```{r}
+x
+x[c(2,2,1,4,3)]
+```
+
+```{r}
+x[0]
+xÅ
+```
+
+
 
 
 
