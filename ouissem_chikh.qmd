@@ -106,6 +106,12 @@ xÅ
 ```
 
 
+reprendre sur git du prof 
+
+```{r}
+
+```
 
 
-
+we can index by integers 
+guess what is the result knowing the code

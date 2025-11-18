@@ -17,3 +17,12 @@ typeof(typeof)
 typeof(list())
 ```
 You can't expand types, but you can create your own types (not in the same space, they don't have the hardware version). The developer creates classes, types are given by the environment. 
+
+###classes
+
+
+```{r}
+data(iris)
+typeof(iris)
+class(iris)
+```
