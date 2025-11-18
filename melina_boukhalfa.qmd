@@ -33,6 +33,7 @@ length(x) #all vectors have a length
 x[1] #access to an element
 typeof(x)
 ```
+
 ```{r}
 y<-c(1,-2,45,1.5,-1e-10)
 y
@@ -64,9 +65,77 @@ complicated
 length(complicated)
 str_length(complicated)
 ```
+
 ```{r}
 some_values<-c("🎈🍷💃🎁🎂🎸😀😀😀😀", x)
 some_values
 length(some_values)
 str_length(some_values)
 ```
+# Indexing 
+
+```{r}
+x<-c(6,5,1,2,3,4)
+x[3]
+```
+
+```{r}
+x[4]<-15
+x
+```
+
+Assignment can be understood has a value semantic assignment: `x` and `y` are different vectors with the same initial content. Therefore, modifying `x`has no effect on `y`. 
+
+```{r}
+y<-x
+y
+```
+```{r}
+x[1]<-18
+x
+y
+```
+
+```{r}
+x
+x[c(2,2,1,4,3)]
+```
+```{r}
+x[0]
+x[7]
+x[10]
+```
+
+```{r}
+typeof(numeric(0))
+typeof(NA)
+length(NA
+```
+
+
+```{r}
+typeof(NA_integer_)
+NA_integer_
+```
+
+```{r}
+x
+x[c(4,1,0,15)]
+```
+
+```{r}
+c(numeric(0),5,numeric(0))
+```
+
+
+```{r}
+y<-c("A","B","C")
+y
+y[c(TRUE,FALSE,TRUE)]
+```
+```{r}
+x
+x[c(-1,-4)] #can't mix positive and negative values, use negative to remove an index
+```
+
+We can index by integer, in R everything is a vector
